@@ -180,7 +180,7 @@ export function Footer() {
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-primary" />
                   <div>
-                    <span className="block">+91 99999 99999</span>
+                    <span className="block">+91 74999 37499</span>
                     <span className="text-xs text-muted-foreground">
                       24/7 Family Support
                     </span>

@@ -401,6 +401,7 @@ export function FeaturedTours() {
                 variant="outline"
                 size="lg"
                 className=" hover:text-primary"
+                onClick={() => handleWhatsAppInquiry("Chat with Family")}
               >
                 <MessageCircle className="h-4 w-4 mr-2" />
                 Chat with Family

@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { Button } from './ui/button';
-import { Menu, X, User, Heart, Phone, MessageCircle } from 'lucide-react';
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import { useState } from "react";
+import { Button } from "./ui/button";
+import { Menu, X, User, Heart, Phone, MessageCircle } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 interface HeaderProps {
   onBackToHome: () => void;
@@ -11,16 +11,19 @@ export function Header({ onBackToHome }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'Spiritual Tours', href: '#spiritual' },
-    { label: 'Monsoon Treks', href: '#monsoon' },
-    { label: 'Jungle Safari', href: '#safari' },
-    { label: 'Family Tours', href: '#family' },
-    { label: 'About Us', href: '#about' },
-    { label: 'Contact', href: '#contact' }
+    { label: "Spiritual Tours", href: "#spiritual" },
+    { label: "Monsoon Treks", href: "#monsoon" },
+    { label: "Jungle Safari", href: "#safari" },
+    { label: "Family Tours", href: "#family" },
+    { label: "About Us", href: "#about" },
+    { label: "Contact", href: "#contact" },
   ];
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/919999999999?text=Hello Traveller Ji! I would like to inquire about tour packages.', '_blank');
+    window.open(
+      "https://wa.me/917499937499?text=Hello Traveller Ji! I would like to inquire about tour packages.",
+      "_blank"
+    );
   };
 
   return (
@@ -29,18 +32,7 @@ export function Header({ onBackToHome }: HeaderProps) {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <button 
-              onClick={onBackToHome}
-              className="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity"
-            >
-              <div className="w-8 h-8 bg-gradient-warm rounded-full flex items-center justify-center">
-                <span className="text-white text-sm">🕉</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl text-primary">Traveller Ji</span>
-                <span className="text-xs text-muted-foreground -mt-1">Your Journey, Our Family</span>
-              </div>
-            </button>
+            <img className=" w-52 h-auto" src="/logo.svg" alt="" />
           </div>
 
           {/* Desktop Navigation */}
@@ -59,7 +51,12 @@ export function Header({ onBackToHome }: HeaderProps) {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" size="sm" onClick={handleWhatsAppClick} className="text-green-600 hover:text-green-700">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={handleWhatsAppClick}
+              className="text-green-600 hover:text-green-700"
+            >
               <MessageCircle className="h-4 w-4 mr-1" />
               WhatsApp
             </Button>
@@ -85,17 +82,19 @@ export function Header({ onBackToHome }: HeaderProps) {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-80">
-              <div className="flex flex-col space-y-6 mt-6">
+              <div className="flex flex-col space-y-6 mt-6 px-5">
                 <div className="flex items-center gap-2 pb-4 border-b">
                   <div className="w-10 h-10 bg-gradient-warm rounded-full flex items-center justify-center">
                     <span className="text-white">🕉</span>
                   </div>
                   <div>
                     <h3 className="text-primary">Traveller Ji</h3>
-                    <p className="text-xs text-muted-foreground">Your Journey, Our Family</p>
+                    <p className="text-xs text-muted-foreground">
+                      Your Journey, Our Family
+                    </p>
                   </div>
                 </div>
-                
+
                 {navItems.map((item) => (
                   <a
                     key={item.label}
@@ -106,10 +105,10 @@ export function Header({ onBackToHome }: HeaderProps) {
                     {item.label}
                   </a>
                 ))}
-                
+
                 <div className="pt-6 border-t space-y-3">
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     className="w-full justify-start text-green-600 border-green-600 hover:bg-green-50"
                     onClick={handleWhatsAppClick}
                   >

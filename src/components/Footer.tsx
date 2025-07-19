@@ -59,7 +59,7 @@ export function Footer() {
 
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/919999999999?text=Namaste! I want to join Traveller Ji family for amazing journeys.",
+      "https://wa.me/917499937499?text=Namaste! I want to join Traveller Ji family for amazing journeys.",
       "_blank"
     );
   };
@@ -111,15 +111,9 @@ export function Footer() {
             {/* Brand Section */}
             <div className="lg:col-span-2">
               <div className="mb-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-10 h-10 bg-gradient-warm rounded-full flex items-center justify-center">
-                    <span className="text-white">🕉</span>
-                  </div>
-                  <div>
-                    <h2 className="text-xl text-primary">Traveller Ji</h2>
-                    <p className="text-xs text-muted-foreground">
-                      Your Journey, Our Family
-                    </p>
+                <div>
+                  <div className="flex items-center">
+                    <img className=" w-60 h-auto" src="/logo.svg" alt="" />
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
@@ -297,27 +291,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Certifications & Trust */}
-        <div className="py-6 border-t border-border/50">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <div className="flex flex-col md:flex-row gap-4 text-center md:text-left">
-              <span className="text-muted-foreground">
-                🛡️ Government Registered Tour Operator
-              </span>
-              <span className="text-muted-foreground">
-                📜 License: TJ/MH/2024/001
-              </span>
-              <span className="text-muted-foreground">
-                🏆 TripAdvisor Certificate of Excellence
-              </span>
-            </div>
-            <div className="flex gap-4 text-xs">
-              <span className="text-green-600">✓ Safe Travel Certified</span>
-              <span className="text-blue-600">✓ ISO 9001:2015 Certified</span>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom Section */}
         <Separator />
         <div className="py-6">
@@ -339,10 +312,11 @@ export function Footer() {
             </div>
           </div>
           <div className="text-center mt-4 text-xs text-muted-foreground">
-            <p>🙏 Vasudhaiva Kutumbakam - The World is One Family 🙏</p>
-            <p className="mt-1">
-              Made with ❤️ for travellers by travellers in Maharashtra, India
+            <p>
+              🙏 Vasudhaiva Kutumbakam - The World is One Family 🙏 Made with ❤️
+              for travellers by travellers in Maharashtra, India
             </p>
+            <p className="mt-1"></p>
           </div>
         </div>
       </div>

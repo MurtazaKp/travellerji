@@ -239,7 +239,7 @@ export function SearchResults({ query, onBackToHome }: SearchResultsProps) {
 
   const handleWhatsAppInquiry = (tourTitle: string) => {
     window.open(
-      `https://wa.me/919999999999?text=Namaste! I want to know more about ${tourTitle} with Traveller Ji family.`,
+      `https://wa.me/917499937499?text=Namaste! I want to know more about ${tourTitle} with Traveller Ji family.`,
       "_blank"
     );
   };
@@ -607,7 +607,7 @@ export function SearchResults({ query, onBackToHome }: SearchResultsProps) {
                     variant="outline"
                     onClick={() =>
                       window.open(
-                        "https://wa.me/919999999999?text=Help me find the perfect journey!",
+                        "https://wa.me/917499937499?text=Help me find the perfect journey!",
                         "_blank"
                       )
                     }

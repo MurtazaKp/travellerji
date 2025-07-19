@@ -30,7 +30,7 @@ export function FeaturedTours() {
 
   const handleWhatsAppInquiry = (tourTitle: string) => {
     window.open(
-      `https://wa.me/919999999999?text=Namaste! I want to know more about ${tourTitle} with Traveller Ji family.`,
+      `https://wa.me/917499937499?text=Namaste! I want to know more about ${tourTitle} with Traveller Ji family.`,
       "_blank"
     );
   };
@@ -120,7 +120,7 @@ export function FeaturedTours() {
       rating: 4.7,
       reviews: 156,
       image:
-        "https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1676138528600-135cb9dbd5d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       category: "Wildlife",
       highlights: [
         "Asiatic Lions",

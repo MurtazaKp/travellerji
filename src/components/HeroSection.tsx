@@ -45,7 +45,7 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
 
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/919999999999?text=Namaste! I want to plan a spiritual journey with Traveller Ji family.",
+      "https://wa.me/917499937499?text=Namaste! I want to plan a spiritual journey with Traveller Ji family.",
       "_blank"
     );
   };
@@ -88,7 +88,7 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
         <div className="max-w-5xl mx-auto">
           {/* Hero Text */}
           <div className="mb-8">
-            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-white/10 backdrop-blur rounded-full">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-white/10 backdrop-blur rounded-full mt-10">
               <span className="text-orange-300">🕉</span>
               <span className="text-white text-sm">
                 Trusted by 10,000+ Travellers
@@ -96,8 +96,8 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
-              <span className="block">Namaste!</span>
-              <span className="block text-orange-300">Your Journey</span>
+              <span className="block">Namaste! Your Journey</span>
+              {/* <span className="block text-orange-300">Your Journey</span> */}
               <span className="block">Our Family</span>
             </h1>
 
@@ -246,7 +246,7 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center pb-10">
             <div className="text-white">
               <div className="text-2xl mb-1">10,000+</div>
               <div className="text-sm text-white/80">Happy Families</div>

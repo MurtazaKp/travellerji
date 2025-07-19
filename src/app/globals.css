@@ -205,3 +205,17 @@ html {
   font-size: var(--font-size);
   scroll-behavior: smooth;
 }
+
+
+.rdp-chevron{
+  fill: #fb923c !important;
+}
+
+
+.rdp-selected .rdp-day_button{
+  border: 1px solid #fb923c !important;
+}
+
+.rdp-today:not(.rdp-outside){
+  color: #fb923c !important;
+}

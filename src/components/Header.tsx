@@ -50,7 +50,7 @@ export function Header({ onBackToHome }: HeaderProps) {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-3">
+          {/* <div className="hidden md:flex items-center space-x-3">
             <Button
               variant="ghost"
               size="sm"
@@ -72,7 +72,7 @@ export function Header({ onBackToHome }: HeaderProps) {
             <Button size="sm" className="bg-primary hover:bg-primary/90">
               Plan Journey
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu */}
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -106,7 +106,7 @@ export function Header({ onBackToHome }: HeaderProps) {
                   </a>
                 ))}
 
-                <div className="pt-6 border-t space-y-3">
+                {/* <div className="pt-6 border-t space-y-3">
                   <Button
                     variant="outline"
                     className="w-full justify-start text-green-600 border-green-600 hover:bg-green-50"
@@ -130,7 +130,7 @@ export function Header({ onBackToHome }: HeaderProps) {
                   <Button className="w-full mt-4 bg-primary hover:bg-primary/90">
                     Plan Your Journey
                   </Button>
-                </div>
+                </div> */}
               </div>
             </SheetContent>
           </Sheet>
